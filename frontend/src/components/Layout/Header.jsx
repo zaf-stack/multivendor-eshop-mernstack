@@ -58,7 +58,9 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                width="220px"
+                // src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src="https://res.cloudinary.com/dku0xftar/image/upload/v1690952629/eshop-transparent_logo_h8rcju.png"
                 // src="https://img.freepik.com/free-vector/flat-design-bookstore-logo-template_23-2149325325.jpg?w=1380&t=st=1690806328~exp=1690806928~hmac=8311b48440559deae8ff95b60df4cbe649056ceba792acb2aab8239dea9d6a42"
                 // src="https://res.cloudinary.com/dku0xftar/image/upload/v1690807133/4732441_jjmzay.svg"
                 // src="https://res.cloudinary.com/dku0xftar/image/upload/v1690783310/samples/cloudinary-icon.png"
@@ -220,9 +222,11 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                width="130px"
+                src="https://res.cloudinary.com/dku0xftar/image/upload/v1690952629/eshop-transparent_logo_h8rcju.png"
+                // src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                 alt=""
-                className="mt-3 cursor-pointer"
+                className="mt-2 cursor-pointer mb-2"
               />
             </Link>
           </div>

@@ -11,9 +11,11 @@ const DashboardHeader = () => {
   return (
     <div className="w-full h-[80px] bg-white shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
-        <Link to="/dashboard">
+        <Link to="/">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            // src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            width="150px"
+            src="https://res.cloudinary.com/dku0xftar/image/upload/v1690952629/eshop-transparent_logo_h8rcju.png"
             alt=""
           />
         </Link>
