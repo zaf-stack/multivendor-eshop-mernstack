@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 const Singup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState();
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
@@ -30,11 +31,18 @@ const Singup = () => {
     e.preventDefault();
 
     axios
-      .post(`${server}/user/create-user`, { name, email, password, avatar })
+      .post(`${server}/user/create-user`, {
+        name,
+        email,
+        phoneNumber,
+        password,
+        avatar,
+      })
       .then((res) => {
         toast.success(res.data.message);
         setName("");
         setEmail("");
+        setPhoneNumber();
         setPassword("");
         setAvatar();
       })
@@ -212,6 +220,15 @@ const Singup = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                className="p-2  rounded-xl border"
+                type="number"
+                name="phoneNumber"
+                required
+                placeholder="Phone Number"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
               <div className="relative">
                 <input
