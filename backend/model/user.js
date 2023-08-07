@@ -20,6 +20,7 @@ const userSchema = new mongoose.Schema({
   phoneNumber: {
     type: Number,
     required: [true, "Please enter your Phone Number"],
+    minLength: [10, "phoneNumber should be 10 digit"],
   },
   addresses: [
     {

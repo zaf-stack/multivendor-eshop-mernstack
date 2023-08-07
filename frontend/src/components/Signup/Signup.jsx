@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 const Singup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState();
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
@@ -42,7 +42,7 @@ const Singup = () => {
         toast.success(res.data.message);
         setName("");
         setEmail("");
-        setPhoneNumber();
+        setPhoneNumber("");
         setPassword("");
         setAvatar();
       })
@@ -343,10 +343,12 @@ const Singup = () => {
             </form>
           </div>
 
-          <div className="md:block hidden w-1/2">
+          <div className="md:block hidden w-1/2 bg-gradient-to-l from-[#0F52AB] to-[#D6F2F4] rounded-2xl">
             <img
               className="rounded-2xl"
-              src="https://images.unsplash.com/photo-1616606103915-dea7be788566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              // src="https://images.unsplash.com/photo-1616606103915-dea7be788566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              // src="https://res.cloudinary.com/dku0xftar/image/upload/v1691380085/female_shopping_from_phone_eimirm.jpg"
+              src="https://res.cloudinary.com/dku0xftar/image/upload/v1691385482/website-need-image/Untitled_design_yfsfsc.png"
             />
           </div>
           {/* </div> */}
