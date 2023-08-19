@@ -35,6 +35,7 @@ router.post("/create-user", async (req, res, next) => {
     };
 
     const activationToken = createActivationToken(user);
+    // const activationToken = encodeURIComponent(createActivationToken(user));
 
     // const activationUrl = `https://eshop-tutorial-pyri.vercel.app/activation/${activationToken}`;
     const activationUrl = `http://localhost:3000/activation/${activationToken}`;
@@ -75,6 +76,7 @@ router.post(
         activation_token,
         process.env.ACTIVATION_SECRET
       );
+      console.log(newUser);
 
       if (!newUser) {
         return next(new ErrorHandler("Invalid token", 400));

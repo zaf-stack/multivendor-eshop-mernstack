@@ -1,5 +1,5 @@
 {
-  "name": "e-shop-tutorial",
+  "name": "e-shop",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,9 +8,10 @@
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "debug": "ndb server.js"
   },
-  "author": "shahriar Sajeeb",
+  "author": "uniqueIIT",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -23,6 +24,7 @@
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.0",
+    "ndb": "^1.1.5",
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.20",
     "stripe": "^12.0.0"
